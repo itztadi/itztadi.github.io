@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>itztadi — Cybersecurity Researcher & Bug Bounty Hunter</title>
+  <meta name="description" content="Cybersecurity researcher and bug bounty hunter — writeups, tools, and research by itztadi." />
+  <link rel="icon" href="/assets/og-hero.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/style.css">
+  <meta name="theme-color" content="#02030a">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="itztadi — Cybersecurity Researcher & Bug Bounty Hunter" />
+  <meta property="og:description" content="Bug bounty writeups, exploit research, and tools by itztadi." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://itztadi.github.io" />
+  <meta property="og:image" content="https://itztadi.github.io/assets/og-hero.svg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="itztadi — Cybersecurity Researcher" />
+  <meta name="twitter:description" content="Bug bounty writeups, exploit research, and tools." />
+  <meta name="twitter:image" content="https://itztadi.github.io/assets/og-hero.svg" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"itztadi",
+    "url":"https://github.com/itztadi",
+    "jobTitle":"Cybersecurity Researcher & Bug Bounty Hunter",
+    "description":"Security research, exploit timelines, and responsible disclosure writeups focused on web & cloud vulnerabilities.",
+    "sameAs":[
+      "https://github.com/itztadi"
+    ]
+  }
+  </script>
+</head>
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+
+  <header class="topbar" role="banner">
+    <div class="wrap">
+      <div class="brand">
+        <a class="logo" href="/">itztadi</a>
+        <div class="sub">🔐 Cybersecurity · Research · Bug Bounties</div>
+      </div>
+
+      <nav class="nav" role="navigation" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="/writeups/">Writeups</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap main" id="content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="card">
+        <div class="left">
+          <h1 id="hero-title" class="neon">itztadi</h1>
+          <p class="tagline">Cybersecurity researcher & bug bounty hunter</p>
+          <p class="lead">I hunt vulnerabilities, write technical research and public writeups, and help secure web and cloud systems. Responsible disclosure & PoCs.</p>
+
+          <div class="cta-row">
+            <a class="btn" href="/writeups/">Read writeups</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <div class="meta">
+            <a class="chip" href="https://github.com/itztadi" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a class="chip disabled" href="#" aria-disabled="true">HackerOne</a>
+            <a class="chip disabled" href="#" aria-disabled="true">Twitter</a>
+          </div>
+        </div>
+
+        <aside class="right" aria-hidden="false">
+          <!-- SVG avatar for crispness and fast load -->
+          <div class="avatar" id="avatar" role="img" aria-label="Avatar for itztadi">
+            <svg viewBox="0 0 120 120" width="120" height="120" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false">
+              <defs>
+                <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+                  <stop offset="0" stop-color="#00FFA3"/>
+                  <stop offset="1" stop-color="#7B61FF"/>
+                </linearGradient>
+              </defs>
+              <rect width="120" height="120" rx="16" fill="#071226"/>
+              <g font-family="ui-monospace, SFMono-Regular, Menlo, Monaco" font-weight="800" font-size="44" fill="#001312" text-anchor="middle">
+                <text x="50%" y="56%" fill="url(#g)" dy="0.36em">IT</text>
+              </g>
+            </svg>
+          </div>
+
+          <div class="glitch">#404-SEC</div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="panel" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Focused on web and cloud security research, exploit analysis, and pragmatic writeups. I publish PoCs and tooling to improve defenders' visibility and remediation speed.</p>
+    </section>
+
+    <section id="writeups-preview" class="panel alt" aria-labelledby="writeups-title">
+      <h2 id="writeups-title">Recent writeups</h2>
+      <ul class="posts" id="posts-list" aria-live="polite">
+        <li><strong>2026-06</strong> — ExampleCorp SSO auth bypass — analysis + PoC</li>
+        <li><strong>2025-11</strong> — SSRF chain to RCE in example-service</li>
+      </ul>
+      <p><a href="/writeups/" class="more">See all writeups →</a></p>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected tools & projects</h2>
+      <p>Small, focused tooling for discovery, automation, and sandboxing PoCs. Source and details on GitHub.</p>
+    </section>
+
+    <section id="contact" class="panel alt" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contact</h2>
+      <p>For disclosure coordination or hiring: prefer GitHub issues or the email listed in the repo. (Email omitted here for privacy — add to index.html if you want it visible.)</p>
+      <p class="small">Prefer responsible disclosure — please include reproducible steps and scope in your report.</p>
+    </section>
+  </main>
+
+  <footer class="foot" role="contentinfo">
+    <div class="wrap">
+      <small>© <span id="year"></span> itztadi • Privacy-first • No trackers</small>
+    </div>
+  </footer>
+
+  <script src="/assets/script.js" defer></script>
+</body>
+</html>
